@@ -1,0 +1,27 @@
+html, body {
+  height: 100%;
+  background-color: rgb(35,35,36);
+}
+.margin-auto {
+    margin: auto;
+}
+#site-header {
+  background-color: #227cc5;
+  -webkit-box-shadow: 0 3px #165181, inset 0 1px rgba(255,255,255,.35);
+  -moz-box-shadow: 0 3px #165181, inset 0 1px rgba(255,255,255,.35);
+  box-shadow: 0 3px #165181, inset 0 1px rgba(255,255,255,.35);
+  background: -webkit-linear-gradient(bottom, #1371bd, #2f86cd);
+  background: -moz-linear-gradient(bottom, #1371bd, #2f86cd);
+  background: -o-linear-gradient(bottom, #1371bd, #2f86cd);
+  background: -ms-linear-gradient(bottom, #1371bd, #2f86cd);
+  background: linear-gradient(to top, #1371bd, #2f86cd);
+  border-bottom: 1px solid #484F57;
+}
+.headerWrap {
+  padding-top: 10px;
+}
+.topStrip {height: 40px;}
+
+.topStrip .back {padding-left: 20px; font-size: 14px; font-weight:bold; color: #000000;}
+
+.topStrip .headerWrap .back img {height: 25px; margin-left: 2px; margin-top: -2px;}
