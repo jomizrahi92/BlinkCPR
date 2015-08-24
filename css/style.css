@@ -34,3 +34,18 @@ html, body {
   text-align: center;
   margin: auto;
 }
+
+.red, .red a {
+  color: #c23b3b;
+}
+
+footer {
+  padding: 25px 0 25px;
+  background-color: #292929;
+  color: #818181;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+}
+
+footer a {
+  color: #1ABC9C;
+}
