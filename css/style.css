@@ -49,3 +49,9 @@ footer {
 footer a {
   color: #1ABC9C;
 }
+
+@media (max-width: 767px) {
+  .blink-weebly {
+    font-size: 18px;
+  }
+}
