@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sign Up - BLINK</title>
+    <meta name="description" content="Sign up for free CPR classes from BLINK!" />
+    <meta name="keywords" content="cpr, blink, hatzalah, jersey shore, save a life" />
+    <meta property="og:site_name" content="BLINK" />
+    <meta property="og:title" content="Sign Up - BLINK" />
+    <meta property="og:description" content="Sign up for free CPR classes from BLINK!" />
+    <meta property="og:image" content="https://signup.blinkcpr.org/logo.png" />
+    <meta property="og:url" content="https://signup.blinkcpr.org/" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/style.css" rel="stylesheet" media="screen">
+</head>
+
+<body>
+    <div id="header_container">
+        <header id="site-header">
+            <div class="topStrip">
+                <div class="headerWrap">
+                    <a href="http://www.blinkcpr.org" class="back">« Back to <img src="http://www.blinkcpr.org/uploads/4/2/7/0/42705879/1417472569.png"></a>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div>
+        <a href="http://blinkcpr.org">
+            <img class="center img-responsive margin-auto" src="http://www.blinkcpr.org/uploads/4/2/7/0/42705879/1417472569.png">
+        </a>
+    </div>
+    <div>
+        <!--<p class="blink-weebly">Sorry, there are currently no classes being offered, but sign up below and we'll notify you when new classes are posted!</p>-->
+    </div>
+    
+    <iframe src="https://docs.google.com/forms/d/148-ZsDDdf8HbmaZcZmqN4nQu_PFFD9gpdYwrC3XW2qc/viewform?embedded=true" width="100%" frameborder="0" scrolling="no">Loading...</iframe>
+        <p id="callback">
+        </p>
+    <!--<div class="done">Upon submittion of the form <a href="#site-header">click here</a> to scroll back up</div>-->
+    <footer class="text-center">
+        <p class="red"><a href="http://blinkcpr.org">When it's all a matter of seconds, will you know what to do?</a></p>
+        <p class="red">Emergency Hatzalah Phone Numbers</p>
+        <p>Flatbush: (718) 230-1000<br>Manhattan: (212) 230-1000<br>Jersey Shore: (732) 531-9988</p>
+        <p>Hatzalah EMS of the Jersey Shore is an IRS approved 501(c)3 tax-deductible organization</p>
+        <p>Copyright &copy; 2015 All Rights Reserved Jersey Shore Hatazlah EMS.</p>
+        <p>Created By <a href="http://JosephMizrahi.com" target="_blank">Joseph Mizrahi</a></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-64808829-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <script type="text/javascript" src="js/iframeResizer.min.js"></script>
+    <script type="text/javascript">
+
+        /*
+         * If you do not understand what the code below does, then please just use the
+         * following call in your own code.
+         *
+         *   iFrameResize({log:true});
+         *
+         * Once you have it working, set the log option to false.
+         */
+
+        iFrameResize({
+            log                     : true,                  // Enable console logging
+            inPageLinks             : true,
+            resizedCallback         : function(messageData){ // Callback fn when resize is received
+                $('p#callback').html(
+                    '<b>Frame ID:</b> '    + messageData.iframe.id +
+                    ' <b>Height:</b> '     + messageData.height +
+                    ' <b>Width:</b> '      + messageData.width +
+                    ' <b>Event type:</b> ' + messageData.type
+                );
+            },
+            messageCallback         : function(messageData){ // Callback fn when message is received
+                $('p#callback').html(
+                    '<b>Frame ID:</b> '    + messageData.iframe.id +
+                    ' <b>Message:</b> '    + messageData.message
+                );
+                alert(messageData.message);
+                document.getElementsByTagName('iframe')[0].iFrameResizer.sendMessage('Hello back from parent page');
+            },
+            closedCallback         : function(id){ // Callback fn when iFrame is closed
+                $('p#callback').html(
+                    '<b>IFrame (</b>'    + id +
+                    '<b>) removed from page.</b>'
+                );
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>

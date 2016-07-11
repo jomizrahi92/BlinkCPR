@@ -47,6 +47,11 @@ html, body {
   padding: 15px 0;
 }
 
+#callback {
+  color: #fff;
+  text-align: center;
+}
+
 footer {
   padding: 25px 0 25px;
   background-color: #292929;
