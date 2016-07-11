@@ -39,6 +39,14 @@ html, body {
   color: #c23b3b;
 }
 
+.done {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  padding: 15px 0;
+}
+
 footer {
   padding: 25px 0 25px;
   background-color: #292929;
